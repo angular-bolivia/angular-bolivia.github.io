@@ -1,0 +1,3 @@
+name: Angular Bolivia
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title

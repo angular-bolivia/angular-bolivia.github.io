@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign author = site.data.authors[page.author] %}
+
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+    <!-- Output author details if some exist. -->
+    {% if author %}
+        <div>
+            <!--<img src="https://github.com/{{author.github}}.png">-->
+            Escrito por <span class="author">{{ author.name }}</span>
+        </div>
+    {% endif %}
+  {{ content }}
+</div>
